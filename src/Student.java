@@ -1,12 +1,20 @@
 public class Student {
-    private String name;
-    private int studentId;
+    String name;
+    int studentId;
 
+    // Конструктор с параметрами
     public Student(String name, int studentId) {
         this.name = name;
         this.studentId = studentId;
     }
 
+    // Конструктор по умолчанию
+    public Student() {
+        this.name = "Неизвестно";
+        this.studentId = 0;
+    }
+
+    // Геттеры для доступа к полям
     public String getName() {
         return name;
     }
